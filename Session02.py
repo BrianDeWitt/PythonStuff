@@ -45,10 +45,12 @@ print("Thanks. So far you have the following in your list: ", favorite_fruits)
 # Then determine if the user wants to continue or not and do appropriate steps
 while True:
     keep_going = input("\nWould you like to add another fruit to your list? Yes or no: ")
+    # Determine what was entered
     if keep_going == "Yes" or keep_going == "yes" or keep_going == "Y" or keep_going == "y":
         another_fruit = input("Please type in the name of another fruit to add to your list: ")
         favorite_fruits.append(another_fruit)
         print("You have added " + another_fruit + " to your list. So far you have the following in your list: ", favorite_fruits)
     else:
-        break
+        break # exits the loop
+# Print out the list and end the program
 print("Thanks. You have the following in your list: ", favorite_fruits)
