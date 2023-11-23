@@ -29,28 +29,44 @@
 # ======================================
 # Question 6 - ask user for fave fruit.
 # Print a welcome and instructions. Get the entered fruit.
-print("Hello. I am a Python script to add fruits to a list.\n")
-entered_fruit = input("Please type in the name of your favorite fruit: ")
+# print("Hello. I am a Python script to add fruits to a list.\n")
+# entered_fruit = input("Please type in the name of your favorite fruit: ")
 
 # Create a list to store entered fruits.
-favorite_fruits = []
+# favorite_fruits = []
 
 # insert the entered fruit into the list
-favorite_fruits.append(entered_fruit)
+# favorite_fruits.append(entered_fruit)
 
 # Print the list so far
-print("Thanks. So far you have the following in your list: ", favorite_fruits)
+# print("Thanks. So far you have the following in your list: ", favorite_fruits)
 
 # Ask if the user would like to add another fruit to the list?
 # Then determine if the user wants to continue or not and do appropriate steps
-while True:
-    keep_going = input("\nWould you like to add another fruit to your list? Yes or no: ")
+# while True:
+#    keep_going = input("\nWould you like to add another fruit to your list? Yes or no: ")
     # Determine what was entered
-    if keep_going == "Yes" or keep_going == "yes" or keep_going == "Y" or keep_going == "y":
-        another_fruit = input("Please type in the name of another fruit to add to your list: ")
-        favorite_fruits.append(another_fruit)
-        print("You have added " + another_fruit + " to your list. So far you have the following in your list: ", favorite_fruits)
-    else:
-        break # exits the loop
+#    if keep_going == "Yes" or keep_going == "yes" or keep_going == "Y" or keep_going == "y":
+#        another_fruit = input("Please type in the name of another fruit to add to your list: ")
+#        favorite_fruits.append(another_fruit)
+#        print("You have added " + another_fruit + " to your list. So far you have the following in your list: ", favorite_fruits)
+#    else:
+#        break # exits the loop
 # Print out the list and end the program
-print("Thanks. You have the following in your list: ", favorite_fruits)
+# print("Thanks. You have the following in your list: ", favorite_fruits)
+
+# ===================================================
+# Question 7 - a loop that iterates through a variable down to zero
+ten = 10
+declining = ten
+print(str(declining))
+while declining > 0:
+   declining = declining - 1
+   print(str(declining))
+   if declining == 0:
+       break
+
+# ===================================================
+# Question 8 - Print multiplication table of a user-entered number
+# entered_number = int(input("Hello. Enter a number and I will print the multiplication table: "))
+
