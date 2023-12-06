@@ -20,7 +20,7 @@
  Program Author: Brian DeWitt s8091778
  Date Started: 23 November 2023
  Date Completed: December 2023
- Last Updated: 6 December 2023 16:19
+ Last Updated: 6 December 2023 19:29
 # =================================================================
 '''
 
@@ -82,7 +82,7 @@ def add_a_credential():
 def view_all_credentials():
     print("The function view_all_credentials was successfully called! \n")
     try:
-        with open(CREDENTIALS_FILE_PATH, 'r', encoding="utf-8") as view_creds:
+        with open(CREDENTIALS_FILE_PATH, 'r', encoding="UTF-8") as view_creds:
             # reader = view_creds.readlines()
             reader = csv.reader(view_creds)
             CREDENTIALS_GLOBAL = list(reader)
@@ -146,7 +146,7 @@ layout = [
 ]
 
 # Display the window and add a title to it 
-window = sg.Window('DigiCore Credential Manager', layout, margins=(40,40), location=(70,50))
+window = sg.Window('DigiCore Credential Manager', layout, margins=(20,20), location=(70,50))
 
 # ===========================================================
 # 888888888888
