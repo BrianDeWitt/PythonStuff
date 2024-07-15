@@ -5,6 +5,7 @@
 
 #Variable declarations
 menu = "Espresso, flat white, long black, filter, cappuccino, frappuccino, macciato, hot chocolate, and chai.\n"
+price = 0.00
 
 # Program
 # Welcome the customer and get their name.
@@ -21,7 +22,6 @@ if name == "Ben" and "Patricia":
 
 print("Hello, " + name + ", thank you so much for coming in. Today we have the following items available: \n" + menu)
 customerOrder = input("What would you like? ")
-#orderTotal = price * float(customerOrderQuantity)
 
 # Determine price of the ordered item
 if customerOrder == "frappuccino":
@@ -30,6 +30,8 @@ elif customerOrder == "frap":
     price = 13.00
 elif customerOrder == "Frappuccino":
     price = 13.00
+elif customerOrder == "Frap": 
+    price = 13.00 
 elif customerOrder == "black coffee":
     price = 3.50
 elif customerOrder == "Black coffee":
@@ -50,6 +52,12 @@ elif customerOrder == "Flat white":
     price = 5.50
 elif customerOrder == "Flat White":
     price = 5.50
+elif customerOrder == "long black":
+    price = 3.75 
+elif customerOrder == "Long Black":
+    price = 3.75
+elif customerOrder == "Long black":
+    price = 3.75 
 elif customerOrder == "latte":
     whipOption = input("Would you like whipped cream? ")
     if whipOption == "Yes":
@@ -66,6 +74,8 @@ elif customerOrder == "filter":
     price = 5.00
 elif customerOrder == "drip":
     price = 4.00
+elif customerOrder == "Drip":
+    price = 4.00 
 elif customerOrder == "Filter":
     price = 5.00
 else:
@@ -73,7 +83,11 @@ else:
 
 customerOrderQuantity = input("How many would you like? ")
 
-print(price)
+orderTotal = price * float(customerOrderQuantity)
+
+print("Great choice, " + name + "! Your " + str(customerOrderQuantity) + " " + customerOrder + " will be ready soon.\n Your total comes to $" + str(orderTotal) + "\n")
+
+
 # ======================================================================
 # Network Chuck Episode 03
 #name = "NetworkChuck"
